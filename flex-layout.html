@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	margin: 0;
+}
+.navbar {
+  color: none;
+  display: flex;
+  height: 75px;
+
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 15%;
+  border-right: 1px solid;
+}
+
+.container{
+  display: flex;
+	flex-basis: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div{
+  height: 75px;
+  width: 10%;
+  font-size: 100%;
+  text-align: center;
+  line-height: 75px;
+  border-right: 1px solid;
+}
+.fitscreen{
+  background-image: url(lake.jpg);
+  background-size: cover;  
+  height: 100vh;
+
+}
+</style>
+</head>
+<body>
+<div class="fitscreen">
+  
+  <div class="navbar">
+      <div class="logo"> 
+        <div> <img src="logo.svg"> </div>
+      </div>
+    <div class="container">
+      <div>Home</div>
+      <div>Hotel</div>
+      <div>Events</div>
+      <div>About</div>
+      <div>Contact</div>
+      <div>News</div>
+      <div>Zoo</div>
+    </div>
+  </div>
+  <div>
+    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ratio="1"> <path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg>
+  </div>
+</div>
+
+</body>
+</html>
+<!-- header, section, footer, article, nav-->
