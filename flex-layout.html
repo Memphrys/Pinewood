@@ -11,19 +11,22 @@ body{
   height: 75px;
 
 }
-.logo{
-  display: flex;
+.center{
   justify-content: center;
   align-items: center;
-  flex-basis: 15%;
+}
+.logo{
+  display: flex;
+  border-bottom: 1px solid;
   border-right: 1px solid;
+  flex-basis: 15%;
 }
 
 .container{
   display: flex;
-	flex-basis: 80%;
-  align-items: center;
-  justify-content: center;
+	flex-basis: 70%;
+  border-bottom: 1px solid;
+
 }
 
 .container > div{
@@ -32,12 +35,21 @@ body{
   font-size: 100%;
   text-align: center;
   line-height: 75px;
-  border-right: 1px solid;
 }
 .fitscreen{
   background-image: url(lake.jpg);
   background-size: cover;  
   height: 100vh;
+
+}
+
+.facebook{
+  display: flex;
+  flex-basis: 15%;
+  font-size: 20px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
 
 }
 </style>
@@ -46,10 +58,10 @@ body{
 <div class="fitscreen">
   
   <div class="navbar">
-      <div class="logo"> 
-        <div> <img src="logo.svg"> </div>
+      <div class="logo center"> 
+        <div> <img src="logo.svg" style="width: 90%;"> </div>
       </div>
-    <div class="container">
+    <div class="container center">
       <div>Home</div>
       <div>Hotel</div>
       <div>Events</div>
@@ -58,10 +70,11 @@ body{
       <div>News</div>
       <div>Zoo</div>
     </div>
+    <div class="facebook center">
+       F
+    </div>
   </div>
-  <div>
-    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ratio="1"> <path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg>
-  </div>
+  
 </div>
 
 </body>
